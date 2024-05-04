@@ -1,0 +1,73 @@
+﻿<Page x:Class="LibraryManagement.Pages.Regulations"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibraryManagement.Pages"
+      mc:Ignorable="d" 
+      Title="Regulations" Width="680" Height="375">
+
+    <Grid Background="White">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="0,0,0,15">
+                <Label HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="18">LIBRARY REGULATIONS</Label>
+
+                <Label FontWeight="DemiBold" FontSize="12">Article 1: How to get library card?</Label>
+                <TextBlock Padding="20,0,0,0" TextWrapping="Wrap">
+                Your student ID card is your Library card. Use your Student or Staff ID card to access Library services and resources.
+                </TextBlock>
+
+                <Label FontWeight="DemiBold" FontSize="12">Article 2: Opening hours</Label>
+                <TextBlock Padding="20,0,0,0" TextWrapping="Wrap">
+                Monday - Friday: 8:15 – 21:00<LineBreak />
+                Weekend: 8:00 – 12:00, 13:00 – 17:00  (Evenings and weekends the library only serves self-study)
+                </TextBlock>
+
+                <Label FontWeight="DemiBold" FontSize="12">Article 3: Library services:</Label>
+                <TextBlock Padding="20,0,0,0" TextWrapping="Wrap">
+                3.1 Circulation<LineBreak />
+                3.2 Seeking information<LineBreak />
+                3.3 Information consulting<LineBreak />
+                3.4 “Log - on - to e-resource”<LineBreak />
+                3.5 Request materials<LineBreak />
+                3.6 Interlibrary loan<LineBreak />
+                3.7 Group work rooms
+                </TextBlock>
+
+                <Label FontWeight="DemiBold" FontSize="12">Article 4: General regulations</Label>
+                <TextBlock Padding="20,0,0,0" TextWrapping="Wrap">
+                4.1 Patrons must present a valid card to enter library. Cards are non-transferrable<LineBreak />
+                4.2 Loud conversation is forbidden throughout the Library<LineBreak />
+                4.3 Please consciously keep the library clean, no smoking, no graffiti, no littering ...<LineBreak />
+                4.4 Food, drink, toxic and explosive substances in the Library are forbidden<LineBreak />
+                4.5 Please keep quiet in the library and set the mobile phone or computer and other equipment in silent mode. Do not talk to other via phone<LineBreak />
+                4.6 Do not use pencils, pens or highlighters in the book<LineBreak />
+                4.7 Do not bend or tear the pages of the book<LineBreak />
+                4.8 Do not let it get wet or mouldy or damaged in any way
+                </TextBlock>
+
+                <Label FontWeight="DemiBold" FontSize="12">Article 5: Circulation policies</Label>
+                <TextBlock Padding="20,0,0,0" TextWrapping="Wrap">
+                5.1 Place books on designed area after finishing. Do not arrange books on shelf freely<LineBreak />
+                5.2 Materials may not be taken out of the FPT university library without permission of the Librarian<LineBreak />
+                5.3 Textbook for semester/block: Textbook are delivered according to academic calendar. Textbooks can only be renewed up to 1 week when you having suitable reasons<LineBreak />
+                5.4 Textbook for reference purposes: 1 week after new block start, patrons can borrow textbooks as reference books<LineBreak />
+                5.5 Reference book: Patrons can borrow up to 10 items, loan period is 1 week for mother tongue books and 2 weeks for foreign language books, you can renew up to 4 times<LineBreak />
+                5.6 Patrons should:<LineBreak />
+                ----5.6.1 Check list of books borrowed and confirm with librarian<LineBreak />
+                ----5.6.2 Make sure book condition notes at the end of your borrowed books are updated. You are responsible for the condition of everything while it is on loan to you. Please take good care of books or you pay for the damage according to the regulation
+                </TextBlock>
+                
+                <Label FontWeight="DemiBold" FontSize="12">Article 6: Fines and penalty</Label>
+                <TextBlock Padding="20,0,0,0" TextWrapping="Wrap">
+                6.1 Patrons who violate regulations mentioned in article 4 and 5 may get reminded, punished or requested to leave the library based on the violation level. Librarian may take the initial to write violation report, stop providing library services to those who break the law. In the worst situation, those students may get expelled from the university<LineBreak />  
+                6.2 Damaged items which can be used will occur an amount depend on how serious of damage. The book is lost or damaged beyond repair, you have to buy this book<LineBreak />
+                6.3 Overdue books will be fined 5000 VNĐ/1 item/1 day including day off<LineBreak />
+                6.4 In any situation, patrons have to compensate for damage as prescribed
+                </TextBlock>
+
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+</Page>

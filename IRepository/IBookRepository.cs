@@ -1,0 +1,17 @@
+﻿using LibraryManagement.DataAccess;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LibraryManagement.IRepository
+{
+    internal interface IBookRepository
+    {
+        IEnumerable<Book> GetBooks();
+        Book GetBookByID(string bookId);
+        void InsertBook(Book book);
+        void UpdateBook(Book book);
+    }
+}

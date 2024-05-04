@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\About.png" />
+    <None Remove="Images\author.png" />
+    <None Remove="Images\banner.jpg" />
+    <None Remove="Images\Book.png" />
+    <None Remove="Images\book1.png" />
+    <None Remove="Images\book2.png" />
+    <None Remove="Images\Borrow.png" />
+    <None Remove="Images\Home.png" />
+    <None Remove="Images\logo-fpt.png" />
+    <None Remove="Images\Logo.png" />
+    <None Remove="Images\Person.png" />
+    <None Remove="Images\publisher.png" />
+    <None Remove="Images\Statistic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\About.png" />
+    <Resource Include="Images\author.png" />
+    <Resource Include="Images\banner.jpg" />
+    <Resource Include="Images\Book.png" />
+    <Resource Include="Images\book1.png" />
+    <Resource Include="Images\book2.png" />
+    <Resource Include="Images\Borrow.png" />
+    <Resource Include="Images\Home.png" />
+    <Resource Include="Images\logo-fpt.png" />
+    <Resource Include="Images\Logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Person.png" />
+    <Resource Include="Images\publisher.png" />
+    <Resource Include="Images\Statistic.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,58 @@
+﻿<Page x:Class="LibraryManagement.Pages.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibraryManagement.Pages"
+      mc:Ignorable="d" 
+      Title="AboutPage" Height="465" Width="680">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="170"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Source="/Images/logo-fpt.png"/>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Foreground="#faae2d" FontSize="28" TextAlignment="Center">Welcome to</TextBlock>
+                    <TextBlock Grid.Column="1" Foreground="#f3030f" FontWeight="Bold" FontSize="25" VerticalAlignment="Center">FPTU Library</TextBlock>
+                </Grid>
+                <TextBlock Grid.Row="1">Open: 08:15 - 21:00 Weekday | 08:00 - 12:00 and 13:00 - 17:00 Weekend</TextBlock>
+            </Grid>
+        </Grid>
+        
+        <ListBox x:Name="bar" Grid.Row="1"  Background="#faae2d" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionMode="Single" SelectionChanged="bar_SelectionChanged" HorizontalContentAlignment="Center">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBoxItem Width="80" Height="28" BorderBrush="DarkGray" Cursor="Hand" BorderThickness="0" Foreground="White">
+                About us
+            </ListBoxItem>
+            <ListBoxItem Width="80" Height="28" BorderBrush="DarkGray" Cursor="Hand" BorderThickness="0" Foreground="White">
+                Regulations
+            </ListBoxItem>
+        </ListBox>
+        <Frame Grid.Row="2" x:Name="contentFrame" NavigationUIVisibility="Hidden" Background="#e9ecef" BorderThickness="0"/>
+    </Grid>
+</Page>
